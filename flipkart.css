@@ -530,7 +530,7 @@ padding-bottom:7%;
   grid-template-columns: repeat(2,40%);
   height:600px;
   justify-content: flex-start;
-  transform:scale(1.5,1.5);
+  transform:scale(2,2);
   margin-top:0%;
   margin-right: 0%;
   margin-left: 45%;
@@ -572,14 +572,18 @@ p.p{padding-left: 10%;}
   height:100%;
   margin-top:140%;
 margin-left:0%;
-margin-bottom: 50%;
+margin-bottom:1500%;
 transform:scale(1.6,1.6);
 margin-left:40%;
+z-index: 30;
+}
+footer{
+  background-color: white;;
 }
 .breaker3{
   margin-top:40%;
   height:50%;
-  margin-bottom:80%;
+  margin-bottom:200%;
 }
 .lower-banner-ad{
   margin:10%;
@@ -594,15 +598,16 @@ margin-left:40%;
 }
 .footer-container{
   background-color: #212121;
-  transform: scale(4.2,4.2);
+  transform: scale(4.5,4.5);
   display:grid;
 grid-template-columns: repeat(2,1fr);
 margin-left: 40%;
-margin-top:120%;
+margin-top:450%;
 padding-left: 20%;
-padding-right: 20%;
+padding-right: 5%;
+padding-top: 10%;;
 justify-items: flex-start;
-margin-top: 230%;
+margin-top: 170%;
 }
 
 
@@ -811,14 +816,16 @@ font-size: 2rem;
 .z{
 display:grid;
 grid-template-columns: repeat(3,1fr);
-margin-left:99%;
-margin-top:110%;
+margin-left:100%;
+margin-top:20%;
 padding-left:35%;
 justify-content: center;
 transform:scale(4,4);
 padding-top:0%;
 padding-right:30%;
 margin-right:20%;
+object-fit: contain;
+
 }
 
 /*footer*/
@@ -829,11 +836,13 @@ margin-right:20%;
   transform:scale(4.5,4.5);
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  margin-left:330%;
+  margin-left:200%;
+  padding-right: 30%;
+  padding-left: 10%;
   margin-bottom:90%;
   margin-top:590%;
 margin-right:200%;
-padding-right: 10%;
+padding-right: -50%;
 }
 
 
@@ -858,14 +867,13 @@ padding-right: 10%;
 p{
   margin-left: 60%;
 }
-}
+
 footer{
-  display:flex;
-  flex-direction:row;
-  margin-top:100%;
-  padding:0%;
   background-color: white;
-  }
+  margin-bottom: 0%;;
+}
+}
+
 /*desktop view*/
 @media screen and (min-width:1024px) and(max-width:1240px){
   body {
@@ -950,7 +958,7 @@ footer{
     display: flex;
     transform:scale(1.27,1.27);
     margin-top:5%;
-    margin-right:3%;
+  
   }
   .header_search .search1{
     margin-left:15%;
@@ -968,10 +976,10 @@ footer{
     padding-right:2%;
   }
   .header_nav1  ul li{
-    padding-left:15%;
     transform:scale(1.27,1.27);
     padding-bottom:5%;
     padding-top:15%;
+  margin-right: 50%;
   }
   .header_nav1 .search1 button{
   margin-left:10%;
@@ -988,7 +996,7 @@ footer{
   }
   .item-list img {
     object-fit: contain;
-    width: 50rem;
+    width: 40rem;
   }
   .header_search button:hover{
     padding: 0.8rem 1.5rem;
@@ -1002,7 +1010,7 @@ footer{
   transform:scale(1.1,1.1);
   transition:1s;
   }
-  
+ 
   .header_search button:focus{
     padding: 0.8rem 1.5rem;
     background-color: #ff9f00;
@@ -1076,7 +1084,7 @@ footer{
   
   .item-list {
     display: grid;
-    grid-template-columns: repeat(9, 0.5fr);
+    grid-template-columns: repeat(9, 1fr);
     background-color: #ffffff;
     justify-content: center;
     place-content: center;
@@ -1085,6 +1093,8 @@ footer{
     column-gap: 2%;
     height: 20vh;
     object-fit: cover;
+    transform: scale(3,3);
+
   }
   .item-list div{
     width:1rem;
@@ -1094,6 +1104,7 @@ footer{
     justify-content: flex-start;
     column-gap:0%;
   }
+
   .item-list img{
     width:50px;
   }
@@ -1130,11 +1141,13 @@ footer{
   .discount-banner img {
     max-width: 100%;
   }
-  
+  .lower-banner-ad span {
+    color:blue;font-weight: 900;
+  }
   .z {
     display: flex;
     flex-direction:row;
-    column-gap:3%;
+    column-gap:10%;
     width:fit-content;
     place-content: center;
     place-items: center;
@@ -1183,6 +1196,7 @@ footer{
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #212121;
   }
   
   .footer-section h4 {
@@ -1207,6 +1221,7 @@ footer{
     font-size: 12px;
   }
   
+
   .footer-section ul li a:hover {
     text-decoration: underline;
   }
@@ -1231,13 +1246,10 @@ footer{
       height:100%;
     }
   
-    /* .lower-banner{
+     .lower-banner-ad img{
       display:flex;
-      flex-direction:row;
-      width:100%;
-      margin:2rem;
-      column-gap:0.2%;
-    } */
+     object-fit:conatin;
+    } 
   
   .footer-section h4:hover{
   text-shadow:2px 2px 5px grey;
