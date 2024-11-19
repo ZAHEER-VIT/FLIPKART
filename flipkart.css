@@ -412,7 +412,7 @@ body{
 
 
 /*mobile view*/
-@media screen and (min-width:400px)  and (max-width:850px){
+@media screen and (min-width:200px)  and (max-width:850px){
 body{
   background-color: white;
 }
